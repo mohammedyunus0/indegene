@@ -51,7 +51,7 @@ li {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
     .hero-section1 .hero-section {
-      margin: 5rem auto; }
+      margin: 5rem 0; }
     .hero-section1--title {
       padding: 2rem 0; }
     .hero-section1 p {
