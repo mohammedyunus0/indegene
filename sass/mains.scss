@@ -1,0 +1,43 @@
+.hero{
+    background-color: $color-secondary;
+    color: white;
+    font-weight: 200;
+    height: 40rem;
+    &-section1{
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        & .hero-section{
+            margin: 5rem auto;
+        }
+        &--title{
+            padding:2rem 0;
+        }
+        & p{
+            margin-bottom:2rem ;
+            color:$color-primary-blue ;
+        }
+        & .btn{
+            padding: 2rem;
+            margin-top: 1rem;
+
+            background-color: $color-primary-blue;
+            color: white;
+        }
+    }
+
+}
+.sections{
+    &-cards{  
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 2rem;;
+        &-card{
+            display: grid;
+            max-width: 25rem;
+            &-title{
+                background-color:$color-primary-blue ;
+            }
+        }
+    }
+}
