@@ -5,7 +5,7 @@
    display: grid;
    grid-template-columns: repeat(2,1fr);
    &--links a{
-       color: $color-font-1;
+       color: gainsboro;
    }
 }
 }

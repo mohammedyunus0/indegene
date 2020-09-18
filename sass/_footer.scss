@@ -1,0 +1,36 @@
+.footer{
+    background-color: $color-secondary-dark;
+    &-lists{
+        margin: 5rem 0;  
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+        justify-items: center;
+        gap: 2rem;
+        &-list{
+            display: grid;
+            width: 24rem;
+            & h4{
+                color: white;
+                padding: .5rem 1rem;
+                text-align: start;
+                background-color: #737373;
+                font-weight: normal;
+            }
+            & ul{
+                list-style: disc;
+                list-style: inside;
+                color: #737373;
+                padding-top:2rem;
+                & li{
+                    padding-left: 2rem;
+                    & a{
+                        color: #737373;
+                    }
+                }
+            }
+            & p{
+                color: white;
+            }
+        }
+    }
+}
