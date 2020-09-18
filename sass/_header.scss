@@ -1,21 +1,37 @@
 .header{
     width: 100%;
-    height: 10rem;
+    min-height: 10rem;
 
     &-nav{
         display: grid;
-         grid-template-columns: repeat(3,1fr);
-
-   &--links{
-       grid-column: 2 /span 2;
-       display:flex;
-       justify-content: space-between;
-       align-items: center;
+        grid-template-columns: repeat(3,1fr);
+        @media only screen and (max-width:800px){
+        grid-template-columns: 1fr;
+        }
+        @media only screen and (max-width:610px){
+        justify-items: center;
+        }
+        
+        
+        &--links{
+            grid-column: 2 /span 2;
+            @media only screen and (max-width:610px){
+            grid-column: auto;
+            }
+            
+            display:flex;
+             justify-content: space-between;
+            align-items: center;
+            @media only screen and (max-width:610px){
+                flex-direction: column;
+                margin-bottom: 2rem;
+                }
 
        & a{
            display: inline-block;
            padding:.5rem 1rem;
            color: #737373;
+           
            transition: all .2s;
            outline: none;
            &:hover{

@@ -2,11 +2,15 @@
     background-color: $color-secondary;
     color: white;
     font-weight: 200;
-    height: 40rem;
+    min-height: 40rem;
     &-section1{
         height: 100%;
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        @media only screen and (max-width:610px){
+            grid-template-columns: 1fr;
+           justify-items: center;
+            }
         & .hero-section{
             margin: auto 0;
         }
