@@ -33,9 +33,29 @@ a {
   height: 10rem; }
   .header-nav {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); }
-    .header-nav--links a {
-      color: gainsboro; }
+    grid-template-columns: repeat(3, 1fr); }
+    .header-nav--links {
+      grid-column: 2 /span 2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .header-nav--links a {
+        display: inline-block;
+        padding: .5rem 1rem;
+        color: #737373;
+        transition: all .2s;
+        outline: none; }
+        .header-nav--links a:hover {
+          border: 2px solid #2c7aee;
+          border-radius: .2rem; }
+      .header-nav--links input {
+        outline: none;
+        outline-style: none;
+        padding: .5rem 1rem;
+        border: 2px solid #737373;
+        border-radius: .2rem; }
+        .header-nav--links input:hover, .header-nav--links input:focus {
+          border-color: #2c7aee; }
 
 .hero {
   background-color: #1d3c69;
